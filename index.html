@@ -370,7 +370,7 @@ footer{margin-top:56px;background:rgba(43,18,0,.94);color:var(--cream);padding:3
 
    비워두면("") 아래 ② 내장 데이터를 사용합니다.
    ════════════════════════════════════════════════════════════════ */
-const SHEET_CSV_URL = "";
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQWOIgJP-dqeGt2jlhDXidyQnYD-mvFoKh4dtA4crAGc-y3ymYd3PDbwZoQ3UzwJIscUVPE58Bwho5Z/pub?gid=1116653769&single=true&output=csv";
 
 /* ════════════════════════════════════════════════════════════════
    ② 내장 데이터 (시트 연결 전 임시 데이터 / 시트 로드 실패 시 대체)
@@ -576,7 +576,7 @@ const FRAMES = [
 ];
 document.getElementById("film-track").innerHTML =
   [...FRAMES,...FRAMES,...FRAMES,...FRAMES].map(f=>
-    `<span class="strip"><span class="frame">${f.svg}<img class="photo" src="${f.img}" alt="" loading="lazy" onerror="this.remove()"><span class="cap">${f.cap}</span></span></span>`
+    `<span class="strip"><span class="frame">${f.svg}<img class="photo" src="${f.img}" alt="" loading="lazy" onerror="this.remove()"></span></span>`
   ).join("");
 
 /* 데이터 로드 */
